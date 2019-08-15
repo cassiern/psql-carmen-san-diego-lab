@@ -1,0 +1,48 @@
+1. Carmen was seen in:
+
+world=# SELECT population, name, region
+FROM country
+ORDER BY population;
+ population
+
+ answer: 1000 | Holy See (Vatican City State)| Southern Europe
+
+2. She was learning Italian.
+
+	answer: world=# SELECT language FROM countrylanguage WHERE countrycode = 'VAT';
+
+3. Carmen is now in San Marino
+	answer: world=# SELECT * FROM countrylanguage WHERE language = 'Italian';
+
+
+	'SMR' came because there was only one country that had 100% of the people spoke italian.
+	world=# SELECT * FROM country WHERE code = 'SMR';
+
+4. Carmen is might be flying to Serravalle
+
+	answer: world=# SELECT name FROM city WHERE countrycode = 'SMR';
+
+5. Carmen is now in...... Serra! 
+	
+	answer: world=# SELECT * FROM city WHERE name  LIKE 'Ser%';
+
+6. Carmen is Brasilia? Hard to see because of a question mark in my terminal.
+
+	answer: world=# SELECT * FROM country WHERE code = 'BRA';
+	world=# SELECT name FROM city WHERE id = '211';
+
+
+7/8. Carmen is in Santa Monica. 
+
+	answer: world=# SELECT * FROM city WHERE population = 91084;
+
+
+
+
+
+
+
+
+
+
+
